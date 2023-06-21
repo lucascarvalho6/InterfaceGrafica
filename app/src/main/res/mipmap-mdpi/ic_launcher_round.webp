@@ -1,0 +1,18 @@
+hwindigkeit und belegt die nicht verwendete Bandbreite.
+
+Wenn Sie diese Einstellung aktivieren, wird die Uploadgeschwindigkeit der Synchronisierungs-App auf "Automatisch anpassen" festgelegt, basierend auf der Bandbreitenverfügbarkeit, und Benutzer können diese Einstellung nicht ändern.
+
+Wenn Sie diese Einstellung deaktivieren oder nicht konfigurieren, können Benutzer die Uploadgeschwindigkeit auf einen festen Wert (in KB/s) begrenzen oder sie auf "Automatisch anpassen" festlegen.
+
+Wichtig
+Wenn Sie diese Einstellung aktivieren oder deaktivieren und dann wieder zurück auf "Nicht konfiguriert" festlegen, bleibt die letzte Konfiguration wirksam. Wir empfehlen, diese Einstellung anstelle von "Uploadgeschwindigkeit der Synchronisierungs-App auf eine feste Rate begrenzen" zu aktivieren. Sie sollten nicht beide Einstellungen gleichzeitig aktivieren. Diese Einstellung setzt "Uploadrate der Synchronisierungs-App auf einen Prozentsatz des Durchsatzes begrenzen" außer Kraft, wenn beide auf demselben Gerät aktiviert sind.</string>
+
+    <!-- MinDiskSpaceLimitInMB -->
+    <!-- configurable limit where low disk space error will occur-->
+    <string id="MinDiskSpaceLimitInMB">Download von Dateien sperren, wenn Benutzer wenig Speicherplatz haben.</string>
+    <string id="MinDiskSpaceLimitInMB_help">Mit dieser Einstellung können Sie eine Mindestmenge für verfügbaren Datenträgerspeicherplatz angeben und die OneDrive-Synchronisierungs-App (OneDrive.exe) am Herunterladen von Dateien hindern, wenn Benutzer über weniger als diese Menge verfügen.
+
+Benutzer werden zusammen mit Optionen aufgefordert, beim Freigeben von Speicherplatz zu helfen.</string>
+
+    <!-- WarningMinDiskSpaceLimitInMB -->
+    <!-- configurable limit where user will 

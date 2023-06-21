@@ -1,0 +1,24 @@
+es, habilita la configuración "Impedir que los usuarios cambien la ubicación de su carpeta de OneDrive".
+
+Si deshabilitas o no configuras esta opción, la ubicación predeterminada de la carpeta OneDrive - {organization name} estará en %userprofile%.</string>
+
+      <!-- disable changing the default location of the OneDrive folder -->
+      <string id="DisableCustomRoot">Impedir que los usuarios cambien la ubicación de su carpeta de OneDrive</string>
+      <string id="DisableCustomRoot_help">Esta configuración le permite impedir que los usuarios cambien la ubicación de su OneDrive - {organization name} carpeta durante la instalación de la aplicación de sincronización de OneDrive.
+
+Si habilita esta configuración, el vínculo "Cambiar ubicación" está oculto en el programa de instalación de OneDrive. La carpeta OneDrive se creará en la ubicación predeterminada o en la ubicación personalizada que especificó si ha habilitado la configuración "Establecer la ubicación predeterminada para la carpeta OneDrive".
+
+Si deshabilitas o no configuras esta opción, los usuarios pueden hacer clic en el vínculo "Cambiar ubicación" para cambiar la ubicación de su carpeta OneDrive en el programa de instalación de OneDrive.</string>
+
+      <!-- Enable Office Integration for coauthoring and in-app sharing -->
+      <string id="EnableAllOcsiClients">Coautoría y uso compartido en las aplicaciones de escritorio de Office</string>
+      <string id="EnableAllOcsiClients_help">Esta configuración permite a varios usuarios usar las aplicaciones de escritorio de Office 365 ProPlus, Office 2019 u Office 2016 para editar simultáneamente un archivo de Office almacenado en OneDrive. También permite a los usuarios compartir archivos desde las aplicaciones de escritorio de Office.
+
+Si habilita esta configuración, se habilita la coautoría y el uso compartido en las aplicaciones de escritorio de Office. Los usuarios pueden deshabilitar estas características abriendo la configuración de la aplicación de sincronización de OneDrive, haciendo clic en la pestaña Office y desactivando la casilla de verificación "Usar aplicaciones de Office para sincronizar archivos de Office que abro".
+
+Si deshabilita esta configuración, la coautoría y el uso compartido en las aplicaciones de escritorio de Office está deshabilitada y la pestaña Office está oculta en la aplicación de sincronización. La configuración "Conflictos de archivos de Office" también se deshabilitará y cuando dos versiones de un archivo entren en conflicto, ambas copias se conservarán.</string>
+
+
+      <!-- Enable hold the file for handling Office conflicts -->
+      <string id="EnableHoldTheFile">Permitir a los usuarios elegir cómo tratar los conflictos de sincronización de archivos de Office</string>
+      <string id="EnableHoldTheFile_help">Esta co

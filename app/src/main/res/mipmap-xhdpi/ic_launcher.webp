@@ -1,0 +1,19 @@
+gezeigt, wenn sie Dateien lokal löschen.
+
+Wenn Sie diese Einstellung deaktivieren oder nicht konfigurieren, wird die Erinnerung angezeigt, bis die Benutzer "Diese Erinnerung nicht mehr anzeigen" auswählen.</string>
+
+    <!-- IgnoreWebProxy -->
+    <string id="IgnoreWebProxy">Synchronisierungsclient veranlassen, die normale Webproxy-Erkennungslogik zu ignorieren</string>
+    <string id="IgnoreWebProxy_help">
+        Diese Einstellung steuert, ob der OneDrive-Synchronisierungsclient seine standardmäßige Webproxy-Erkennungslogik ausführt oder nicht.
+
+        Wenn Sie diese Einstellung aktivieren, wird der Synchronisierungsclient seine normale Webproxy-Erkennung nicht durchführen und versuchen, direkte Verbindungen zu den Internet-Webendpunkten herzustellen, mit denen er kommunizieren muss. Dies entspricht der Konfiguration ohne Webproxyeinstellungen und ohne automatisches Proxyskript.
+
+        Wenn Sie diese Einstellung deaktivieren oder nicht konfigurieren, wird der Synchronisierungsclient erkennen, ob ein Webproxy in Ihrem Netzwerk konfiguriert ist, und ihn allenfalls verwenden.
+
+        Weitere Informationen finden Sie unter https://docs.microsoft.com/en-us/troubleshoot/windows-client/networking/use-group-policy-apply-winhttp-proxy-settings </string>
+
+    <!-- EnableSyncAdminReports -->
+    <string id="EnableSyncAdminReports">Aktivieren der Berichterstellung zur Synchronisierungsintegrität für OneDrive</string>
+    <string id="EnableSyncAdminReports_help">
+Das OneDrive-Synchronisierungsintegritätsdashboard stellt Berichte zu Synchronisierungs-App-Geräten und Integrität bereit. Mit dieser Einstellung kann die OneDrive-Synchronisierungs-App Synchronisierungsgeräte- und Integritätsdaten in Administratorberichte kompilieren. Diese Berichte ermöglichen es Ihnen, häufige Fehler in einer Organisation proaktiv zu identifizieren, zu untersuchen

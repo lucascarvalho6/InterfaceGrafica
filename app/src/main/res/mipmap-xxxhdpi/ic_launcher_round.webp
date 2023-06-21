@@ -1,0 +1,59 @@
+    <!-- SharePoint Server 2019 settings -->
+    <string id="SharePointOnPremFrontDoorUrl">Especificar la dirección URL de SharePoint Server y el nombre de la organización</string>
+    <string id="SharePointOnPremFrontDoorUrl_help">Esta configuración le permite permitir a los usuarios usar la aplicación de sincronización de OneDrive (OneDrive.exe) para sincronizar archivos en SharePoint Server 2019. La dirección URL define la ubicación de SharePoint Server y permite que la aplicación de sincronización se autentique y configure la sincronización. El nombre de la organización le permite especificar los nombres de carpeta de OneDrive y SharePoint que se crearán en el Explorador de archivos. El nombre de la organización es opcional. Si no lo proporcionas, la aplicación de sincronización usará el primer segmento de la dirección URL como nombre. Por ejemplo, office.sharepoint.com se convertiría en "Office" y el nombre de la carpeta OneDrive sería "OneDrive - Office."
+
+Si habilita esta configuración y proporciona la dirección URL de SharePoint Server, los usuarios podrán sincronizar archivos en SharePoint Server 2019.
+
+Si deshabilita o no configura esta configuración o no proporciona la dirección URL de SharePoint Server, los usuarios no podrán sincronizar archivos en SharePoint Server 2019. </string>
+
+    <string id="SharePointOnPremPrioritization">Especificar la ubicación de OneDrive en un entorno híbrido</string>
+    <string id="SharePointOnPremPrioritization_help">Esta opción determina si la aplicación de sincronización de OneDrive (OneDrive.exe) debe autenticarse en SharePoint Online o SharePoint Server 2019 si la identidad existe en ambos proveedores de identidades. Para usar esta opción, también debes habilitar "Especificar la dirección URL de SharePoint Server y el nombre de la organización". Esta opción solo afecta a la funcionalidad de sincronización de OneDrive para la Empresa. No afecta a la sincronización de sitios de grupo en SharePoint Online o SharePoint Server 2019.
+
+Si habilitas esta opción, puedes seleccionar una de estas dos opciones:
+
+SharePoint Online: la aplicación de sincronización buscará el OneDrive del usuario primero en SharePoint Online. Si la aplicación de sincronización ya está configurada para el usuario con SharePoint Online, intentará configurar una instancia de OneDrive para la Empresa en SharePoint Server 2019 para ese usuario.
+
+SharePoint Server 2019: la aplicación de sincronización buscará el OneDrive para la Empresa de un usuario primero en SharePoint Server 2019. Si la aplicación de sincronización ya está configurada para el usuario con SharePoint Server 2019, intentará configurar una instancia de OneDrive en SharePoint Online para ese usuario.
+
+Si deshabilitas o no configuras esta opción, la aplicación de sincronización buscará primero el OneDrive del usuario en SharePoint Online.</string>
+    <string id="PrioritizeSPO">SharePoint Online</string>
+    <string id="PrioritizeSharePointOnPrem">SharePoint Server 2019</string>
+
+    <!-- Disable tutorial in the FRE -->
+    <string id="DisableFRETutorial">Deshabilitar el tutorial que aparece al final de la instalación de OneDrive</string>
+    <string id="DisableFRETutorial_help">Esta configuración te permite impedir que se inicie el tutorial en un explorador web al final de la instalación de OneDrive.
+
+Si habilitas esta configuración, los usuarios no verán el tutorial cuando se haya completado la configuración de OneDrive.
+
+Si deshabilitas o no configuras esta opción, el tutorial aparecerá al final de la instalación de OneDrive.</string>
+
+    <!-- Disable Animation in the FRE-->
+    <string id="DisableFREAnimation">Deshabilitar la animación que aparece durante la configuración de OneDrive</string>
+    <string id="DisableFREAnimation_help">Esta configuración evita que la animación se muestre durante la configuración de OneDrive.</string>
+
+      <!-- Block KFM -->
+      <string id="BlockKnownFolderMove">Impedir que los usuarios muevan sus carpetas conocidas de Windows a OneDrive</string>
+      <string id="BlockKnownFolderMove_help">Este ajuste impide que los usuarios muevan las carpetas Escritorio, Imágenes y Documentos a una cuenta de OneDrive para la Empresa.
+Nota: el desplazamiento de carpetas conocidas a cuentas personales de OneDrive ya está bloqueado en equipos unidos a un dominio.
+
+Si habilitas este ajuste, no se mostrará a los usuarios la ventana "Configurar protección de carpetas importantes" y se deshabilitará el comando "Iniciar protección". Si el usuario ya ha movido sus carpetas conocidas, los archivos que estas contengan se conservarán en OneDrive. Para redirigir las carpetas conocidas al dispositivo del usuario, seleccione "No". Este ajuste no tendrá efecto si has habilitado "Preguntar a los usuarios si quieren mover las carpetas conocidas de Windows a OneDrive" o "Redirigir silenciosamente las carpetas conocidas de Windows a OneDrive".
+
+Si deshabilitas o no configuras esta ajuste, los usuarios podrán elegir mover sus carpetas conocidas.</string>
+
+    <string id="BlockKnownFolderMoveDefaultOption">Sí</string>
+    <string id="BlockKnownFolderMoveRestoreFolder">No</string>
+    <!-- KFMOptInWithWizard -->
+    <string id="KFMOptInWithWizard">Preguntar a los usuarios si quieren mover las carpetas conocidas de Windows a OneDrive </string>
+    <string id="KFMOptInWithWizard_help">Esta opción muestra la ventana "Tu departamento de TI quiere que protejas las carpetas importantes", que pide a los usuarios que muevan las carpetas Escritorio, Imágenes y Documentos a OneDrive. Esta característica no está habilitada para SharePoint local. 
+
+Si habilitas esta configuración y proporcionas tu Id. de espacio empresarial, los usuarios que estén sincronizando su OneDrive verán la ventana "Tu departamento de TI quiere que protejas las carpetas importantes" cuando inicien sesión. Si cierran la ventana, se mostrará una notificación de aviso en el centro de actividades hasta que muevan las tres carpetas conocidas. Si un usuario ya ha redirigido las carpetas conocidas a otra cuenta de OneDrive, se le pedirá que redirija las carpetas a la cuenta para tu organización (dejando los archivos existentes).
+
+Si deshabilitas o no configuras esta opción, la ventana "Tu departamento de TI quiere que protejas las carpetas importantes" no se mostrará automáticamente a los usuarios.</string>
+
+    <!-- KFMOptInNoWizard -->
+    <string id="KFMOptInNoWizard">Mover silenciosamente las carpetas conocidas de Windows a OneDrive</string>
+    <string id="KFMOptInNoWizard_help">Esta opción te permite redirigir carpetas conocidas a OneDrive sin requerir interacción por parte del usuario. Si la compilación de la aplicación de sincronización es inferior a 18.171.0823.0001, esta opción solo redirige carpetas conocidas vacías a OneDrive (o carpetas conocidas ya redirigidas a una cuenta distinta de OneDrive). En compilaciones posteriores, se redirigen carpetas conocidas con contenido y se mueve este a OneDrive. Se recomienda usar esta directiva junto con "Preguntar a los usuarios si quieren mover las carpetas conocidas de Windows a OneDrive". Si mover las carpetas conocidas silenciosamente no funciona, se pedirá a los usuarios que corrijan el error antes de continuar.
+
+Si habilitas esta opción y proporcionas tu Id. de espacio empresarial, puedes elegir si se muestra una notificación a los usuarios después de que se hayan redirigido sus carpetas.
+
+Puedes mover todas las carpetas a la vez o seleccionar las carpetas que quieres mover. Después de mover una carpeta, la directiva no volverá a afectar a esa carpeta, incluso si desmarcas la 

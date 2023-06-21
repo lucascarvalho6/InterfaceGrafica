@@ -1,0 +1,38 @@
+de rendimiento</string>
+      <string id="AutomaticUploadBandwidthPercentage_help">Esta opción te permite equilibrar el rendimiento de distintas tareas de carga en un equipo al especificar el porcentaje de rendimiento de carga del equipo que puede usar la aplicación de sincronización de OneDrive (OneDrive.exe) para cargar archivos. Al establecerla como un porcentaje, la aplicación de sincronización puede responder al aumento y la disminución del rendimiento. Cuanto menor sea el porcentaje que establezcas, más lenta será la carga de los archivos. Se recomienda un valor del 50% o superior. La aplicación de sincronización cargará sin restricciones durante un minuto de manera periódica y, a continuación, la velocidad se reducirá hasta alcanzar el porcentaje de carga que estableciste. Esto permite que los archivos pequeños se carguen rápidamente e impide que las cargas voluminosas dominen el rendimiento de carga del equipo.
+
+        Si habilitas esta opción, los equipos usarán el porcentaje de rendimiento de carga que especificaste para cargar archivos en OneDrive y los usuarios no podrán cambiarlo.
+
+        Si deshabilitas o no configuras esta opción, los usuarios pueden elegir limitar la velocidad de carga en un valor fijo (en KB por segundo) o establecerla en "Ajustar automáticamente", que usará el 70% del rendimiento de carga para responder al aumento y la disminución del rendimiento.
+
+        Importante: si habilitas o deshabilitas esta opción y, a continuación, la cambias a "No configurado", la última configuración permanecerá en vigor. Se recomienda habilitar esta opción, en lugar de "Limitar la velocidad de carga de la aplicación de sincronización a una velocidad fija", para limitar la velocidad de carga. No se deben habilitar ambas opciones al mismo tiempo.</string>
+      <!-- Enable Upload Bandwidth Limiting -->
+      <string id="UploadBandwidthLimit">Limitar la velocidad de carga de la aplicación de sincronización a una velocidad fija</string>
+      <string id="UploadBandwidthLimit_help">Esta opción te permite configurar la velocidad máxima a la que la aplicación de sincronización de OneDrive (OneDrive.exe) puede cargar archivos. Esta tasa es un valor fijo en kilobytes por segundo. Cuanto menor sea la tasa, más lenta será la carga de archivos por parte del equipo. La velocidad mínima que puede establecerse es 1 KB/s y la máxima 100000 KB/s. Cualquier entrada inferior a 50 KB/s establecerá el límite en 50 Kbps, incluso si en la interfaz de usuario se muestra la tasa especificada.
+
+Si habilitas esta opción, los equipos usarán la velocidad máxima de carga que especifiques y los usuarios no podrán cambiarla en la configuración de OneDrive.
+
+Si deshabilitas o no configuras esta opción, los usuarios pueden elegir limitar la velocidad de carga a un valor fijo (en KB por segundo) o establecerla en "Ajustar automáticamente", que usará el 70% del rendimiento de carga para responder al aumento y la disminución del rendimiento.
+
+En lugar de usar esta opción para limitar la velocidad de carga, se recomienda habilitar "Limitar la velocidad de carga de la aplicación de sincronización a un porcentaje de rendimiento" para establecer un límite que se ajuste a condiciones variables. No debes habilitar ambas opciones al mismo tiempo.</string>
+
+      <!-- Enable Download Bandwidth Limiting -->
+      <string id="DownloadBandwidthLimit">Limitar la velocidad de descarga de la aplicación de sincronización a una velocidad fija</string>
+      <string id="DownloadBandwidthLimit_help">Esta configuración le permite configurar la velocidad máxima a la que la aplicación de sincronización de OneDrive (OneDrive.exe) puede descargar archivos. Esta velocidad es un valor fijo en kilobytes por segundo y solo se aplica a la sincronización, no a la descarga de actualizaciones. Cuanto menor sea la velocidad, se descargarán los archivos más lentos. La tasa mínima que se puede establecer es de 1 KB/s y la velocidad máxima es de 100000 KB/s. Cualquier entrada inferior a 50 KB/s establecerá el límite en 50 KB/s, incluso si la interfaz de usuario muestra la velocidad introducida.
+Si habilita esta configuración, los equipos usarán la velocidad de descarga máxima que especifique y los usuarios no podrán cambiarla.
+
+Si deshabilitas o no configuras esta opción, los usuarios pueden optar por limitar la velocidad de descarga en la configuración de la aplicación de sincronización de OneDrive.</string>
+
+
+      <!-- prevent OneDrive sync app (OneDrive.exe) from generating network traffic (checking for updates, etc.) until the user signs in to OneDrive -->
+      <string id="PreventNetworkTrafficPreUserSignIn">Evitar que la aplicación de sincronización genere tráfico de red hasta que los usuarios inicien sesión</string>
+      <string id="PreventNetworkTrafficPreUserSignIn_help">Esta opción te permite bloquear la aplicación de sincronización de OneDrive (OneDrive.exe) para que no genere tráfico de red (comprobación de actualizaciones, etc.) hasta que los usuarios inicien sesión en la aplicación de sincronización o comiencen a sincronizar archivos en el equipo.
+
+Si habilitas esta opción, los usuarios deben iniciar sesión en la aplicación de sincronización de OneDrive del equipo o seleccionar sincronizar los archivos de OneDrive o SharePoint en el equipo, para que la aplicación de sincronización se inicie automáticamente.
+
+Si deshabilitas o no configuras esta opción, la aplicación de sincronización de OneDrive se iniciará automáticamente cuando los usuarios inicien sesión en Windows.
+
+Importante: Si habilitas o deshabilitas esta opción y, a continuación, vuelves a cambiarla a No configurado, la última configuración permanecerá en vigor. </string>
+
+      <!-- Silent Account Config -->
+      <string id="SilentAccount

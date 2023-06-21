@@ -1,0 +1,13 @@
+
+Wenn Sie diese Richtlinie nicht konfigurieren, wird Benutzern eine Benachrichtigung angezeigt, wenn sie innerhalb kurzer Zeit mehr als 200 Dateien löschen.</string>
+
+
+    <!-- Forced local mass delete prompt -->
+    <string id="ForcedLocalMassDeleteDetection">Benutzer müssen umfangreiche Löschvorgänge bestätigen</string>
+    <string id="ForcedLocalMassDeleteDetection_help">Mit dieser Einstellung können Benutzer bestätigen, dass sie Dateien in der Cloud, wenn sie eine große Anzahl von synchronisierten Dateien löschen möchten.
+
+Wenn Sie diese Einstellung aktivieren, erscheint eine Warnung immer wenn Benutzer eine große Anzahl von synchronisierten Dateien löschen. Ein Benutzer nicht innerhalb von 7 Tagen einen Löschvorgang bestätigen, werden die Dateien nicht gelöscht.
+
+Ob Sie deaktivieren diese Einstellung nicht konfigurieren, können Benutzer Warnung ausblenden und immer löschen in der Cloud.</string>
+
+    <!-- Block B2BSync aka Cross Tenant
