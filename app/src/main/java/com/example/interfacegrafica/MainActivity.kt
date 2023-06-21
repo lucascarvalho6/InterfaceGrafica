@@ -39,7 +39,9 @@ fun MainScreen(){
     var contador by remember{
         mutableStateOf(0)
     }
-    Column() {
+    Column(
+        modifier = Modifier.background(Color.Red).fillMaxSize()
+    ) {
         Button(onClick = {
             contador = contador + 1
             Log.i("##### NOSSO_LOG", "Vlr do Contador = $contador")
@@ -55,7 +57,7 @@ fun MainScreen(){
         }
 
         Text(text = "Vlr do Contador = $contador")
-        Text(text = "João Vitor de Sousa Rodrigues     RM: 22323")
+        Text(text = "Nome: Lucas Pereira Carvalho     RM: 22307")
     }
 
     Column() {
